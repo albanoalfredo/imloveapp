@@ -1,0 +1,405 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+video::-webkit-media-controls-panel {
+    display: none !important;
+    opacity: 1 !important;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+    color: white;
+    /*background-color: #263535;*/
+    background-color: #0D2633;
+}
+
+
+#hero {
+    width: 100%;
+    height: 840px;
+    background: url(/imgs/header1.jpg);
+    /*background: url(/imgs/imlove-hero-site.mp4);*/
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-size: cover;
+    background-position: center;
+}
+
+video {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+
+
+}
+
+.video-wrapper {
+    /* Telling our absolute positioned video to 
+  be relative to this element */
+    position: relative;
+
+    width: 100%;
+    height: 840px;
+
+    /* Will not allow the video to overflow the 
+  container */
+    overflow: hidden;
+
+    /* Centering the container's content vertically 
+  and horizontally */
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pattern_overlay {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    opacity: 0.3;
+    bottom: 0;
+    background-image: url(/imgs/03.png);
+    z-index: 1;
+    height: 840px;
+}
+
+
+canvas {
+    display: block;
+    vertical-align: bottom;
+}
+
+/* ---- particles.js container ---- */
+#particles-js {
+    position: absolute;
+    width: 100%;
+    height: 840px;
+    background-color: rgb(182 25 36 / 0%);
+    background-image: url("");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    z-index: 1000;
+}
+
+.separador1 {
+    width: 100%;
+    height: 350px;
+    background: url(/imgs/separador1-2.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+
+
+}
+
+.separador2 {
+    width: 100%;
+    height: 700px;
+    background: url(/imgs/separador2.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position-x: center;
+    background-position-y: 0px;
+}
+
+h2 {
+
+    font-size: 2rem;
+    font-weight: bold;
+    padding-bottom: .7rem;
+    padding-top: .7rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+p {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+section {}
+
+.steps {
+    width: 200px;
+    max-width: 230px;
+    padding: 20px;
+}
+
+.steps p {
+    color: #0D2633;
+}
+
+
+.container {
+    max-width: 80%;
+    margin: 50px auto;
+    width: 800px;
+}
+
+
+.text-right {
+    text-align: right;
+}
+
+button {
+    min-height: 36px;
+    display: block;
+    margin: 0px auto;
+    cursor: pointer;
+    font-size: .7rem;
+    font-weight: 600;
+    background-color: transparent;
+    position: relative;
+    border: 1px solid #fff;
+    padding: 5px 10px;
+    color: white;
+    text-transform: uppercase;
+}
+
+.card_persona {
+    display: flex;
+    margin: 42px 0;
+
+}
+
+.card_invert {}
+
+.img_personagem {
+    text-align: center;
+}
+
+
+.logos_producao {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*max-width: 80%;*/
+    margin: auto;
+
+}
+
+@supports (-webkit-touch-callout: none) {
+    body *: {
+        /*background-attachment: scroll;*/
+    }
+
+    body {
+
+        /*background-attachment: scroll;*/
+    }
+
+    .separador1 {
+        background-attachment: scroll;
+        background-size: auto;
+        background-position: -134px -132px;
+    }
+}
+
+
+
+@media only screen and (max-width: 600px) and (orientation: portrait) {
+
+
+    .card_persona {
+        flex-direction: column;
+
+    }
+
+    .logos_producao {
+        flex-direction: column;
+
+    }
+
+    .card_invert {
+        flex-direction: column-reverse;
+    }
+
+    h2 {
+        text-align: center;
+    }
+
+    #hero {
+        height: 640px;
+    }
+
+    .pattern_overlay {
+        height: 640px;
+    }
+
+    #particles-js {
+        height: 640px;
+    }
+
+    .separador1 {
+        background-position: -334px;
+    }
+
+    .separador2 {
+        background-position-y: 0;
+    }
+
+    .profile_pic {
+        width: 200px;
+        margin-bottom: 12px;
+        margin-top: 24px;
+    }
+
+    p {
+        font-size: .9rem;
+
+    }
+
+    iframe {
+        height: 180px;
+    }
+
+
+
+
+}

@@ -1,0 +1,229 @@
+/* Set the global variables for everything. Change these to use your own fonts and colours. */
+:root {
+
+    /* Set sans-serif & mono fonts */
+    --sans-font: -apple-system, BlinkMacSystemFont, "Avenir Next", Avenir, "Nimbus Sans L", Roboto, Noto, "Segoe UI", Arial, Helvetica, "Helvetica Neue", sans-serif;
+    --mono-font: Consolas, Menlo, Monaco, "Andale Mono", "Ubuntu Mono", monospace;
+
+}
+
+.gradienteimlove {
+    background: rgb(112,75,152);
+    background: -moz-linear-gradient(0deg, rgba(112,75,152,1) 0%, rgba(50,158,196,1) 100%);
+    background: -webkit-linear-gradient(0deg, rgba(112,75,152,1) 0%, rgba(50,158,196,1) 100%);
+    background: linear-gradient(0deg, rgba(112,75,152,1) 0%, rgba(50,158,196,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#704b98",endColorstr="#329ec4",GradientType=1);
+}
+
+.glowlove {
+    box-shadow: 120px 80px 40px 20px #7E55AB;
+}
+
+.show {
+    visibility: visible !important;
+    opacity: 1 !important;
+}
+
+
+body {
+    background-color: #0D2633;
+    font-family: var(--sans-font);
+}
+
+h2,
+h3,
+p {
+    color: #425e61;
+
+}
+
+p {
+    text-align: justify;
+    text-justify: inter-word;
+
+}
+
+a,
+a:visited {
+    color: #425e61;
+}
+
+footer p {
+    font-size: 10px;
+    text-align: center;
+}
+
+.cta-btn {
+    align-items: center;
+    cursor: pointer;
+    display: inline-flex;
+    margin: 0 auto;
+    max-width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    word-break: keep-all;
+    border-radius: 100px;
+    color: #04C9D2 !important;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 40px;
+    text-transform: none;
+    border: 1px solid #04c9d2;
+    background: transparent;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 3px 24px;
+    transition: background 0.2s ease, color 0.2s ease;
+}
+
+
+.cta-btn:hover {
+    color: rgb(0, 0, 0) !important;
+    font-weight: bold;
+
+    background-color: rgba(12, 194, 208, 0.75);
+}
+
+////////////////css reset //////////////
+
+
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+////////////
