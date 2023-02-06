@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>iMLOVE - Searching...</title>
-    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="css/styles.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;600;900&display=block" rel="stylesheet">
     <link rel="apple-touch-icon" sizes="180x180" href="/imgs/favicon/apple-touch-icon.png">
@@ -18,11 +18,62 @@
     <meta name="msapplication-config" content="/imgs/favicon/browserconfig.xml">
     <meta name="theme-color" content="#ffffff">
     <link rel="icon" type="image/svg+xml" href="/imgs/favicon/favicon.svg">
+
+
+<meta property="og:title" content="iMLOVE - Find your Soulmate">
+    <meta property="og:description" content="iMLOVE is not a dating app. It's the first app of it's kind that will help you find true your love">
+    <meta property="og:image" content="https://imlove.app/imgs/imlove-og.jpg">
+
+
+    
+<style>
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  border-radius: 12px;
+  max-width: 600px;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+</style>
+
 </head>
 
 <body style="height: 100vh; width: 100%; margin: 0; display: flex; flex-direction: column; justify-content: center;">
     <section style="text-align: center; mix-blend-mode: lighten; display: flex; flex-direction: column; align-items: center;">
-        <img style="max-width: 90%" src="imgs/imlove-logo.png" alt="">
+        <img style="max-width: 90%; height: auto;" src="imgs/imlove-logo.png" alt="">
 
         <!-- opcao video -->
 
@@ -95,10 +146,28 @@
     </section>
     <footer style="text-align: center; margin: 0 auto; padding-bottom: 8px; margin: 0 auto; position: fixed; bottom: 0; width: 100%;">
         <!-- <img style="max-width: 420px" src="imgs/imlove-logo.png" alt=""> -->
-        <p>&copy; 2022 iMLOVE. All rights reserved.</p>
+        <p>&copy; 2022 iMLOVE. All rights reserved. | <a href="policy.html"> Termos e condi&ccedil;&otilde;es</a></p>
     </footer>
 
 
+
+      <!--<?php include 'partials/info-modal.php';?>-->
+
+    <!-- Trigger/Open The Modal -->
+    <button id="infoBtn" style="position: fixed; top: 0; right: 0; margin: 12px; padding: 10px 15px; background: #ffffff3d; color: #ffffff85; border: none; visibility: hidden; opacity: 0; transition: background-color .3s, opacity .5s,visibility .5s;"> &#8505;</button>
+
+    <!-- The Modal -->
+    <div id="infoModal" class="modal">
+
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <p>iMLOVE is running on your device.</p>
+        <p>You don't need to do anything</p>
+        <p>You'll be alerted when we find your match</p>
+      </div>
+
+    </div>
 
 <script type="text/javascript">
     
@@ -114,8 +183,48 @@
         setInterval( function() { titleChange(); }, 4000);
     };
 
+// delay info button
+setTimeout(function(){
+    // document.getElementById('infoBtn').style.visibility = "visible";
+    // document.getElementById('infoBtn').style.opacity = "100";
+
+    document.getElementById('infoBtn').classList.add('show');
+
+},2000);
+
 </script>
 
+
+<script>
+// Get the modal
+var modal = document.getElementById("infoModal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("infoBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+
+
+
+</script>
 
 
 </body>
